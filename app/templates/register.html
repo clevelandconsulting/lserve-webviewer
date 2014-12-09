@@ -1,0 +1,22 @@
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6 center-block'>
+		<h1 class='center-block'>Register With Us!</h1>
+		<div ng-show='message' class='alert {{message.level}}' ng-bind-html="message.msg"></div>
+		<div class='well' ng-hide='register.registered'>
+			<h4>Enter Registration Information</h4>
+			<form>
+				<div class='form-group'>
+					 <label for='email'>Email</label>
+					 <input class='form-control' type='text' id='email' name='email' ng-model='register.email' placeholder="Email">
+				</div>
+				<div class='form-group'>
+					 <label for='company'>Company</label>
+					 <input class='form-control' type='text' id='company' name='company' ng-model='register.company' placeholder="Company">
+				</div>
+				<button ng-click='register.submit()' role='button' class='btn btn-lg btn-primary'>Register</button>
+			</form>
+		</div>
+	</div>
+	<div class='col-md-3'></div>
+</div>
